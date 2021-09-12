@@ -1,0 +1,44 @@
+name: renovatebot_crystal_example
+version: 0.1.0
+crystal: 0.34.0
+license: MIT
+
+dependencies:
+  # fixed version on GitHub
+  lucky_web:
+    github: luckyframework/lucky
+    version: 0.2.0
+
+  # fixed version on GitLab
+  spectator:
+    gitlab: arctic-fox/spectator
+    version: 0.5.0
+
+  # fixed commit on GitHub
+  form_builder:
+    github: westonganger/form_builder.cr
+    commit: 9b17a4c2055d8b88afffcd1eadadd69c4530a95d
+
+  # pessimistic version constraint
+  slang:
+    git: https://github.com/jeromegn/slang.git
+    version: ~> 0.1.0
+
+  # branch
+  vcr:
+    git: git@github.com:spoved/vcr.cr.git
+    branch: master
+
+  # tag
+  cake:
+    github: axvm/cake
+    tag: v1.0.0
+
+  # version older than
+  cr-xmpp:
+    github: naqvis/cr-xmpp
+    version: <= 0.1.2
+
+  # nothing specified
+  CrystalEmail:
+    git: https://git.sceptique.eu/Sceptique/CrystalEmail.git
